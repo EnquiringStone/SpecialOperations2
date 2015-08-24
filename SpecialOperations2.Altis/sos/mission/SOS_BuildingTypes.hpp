@@ -57,3 +57,21 @@ class IndustrialShed : Building {
     specialUnitsPositions[] = {0};
     spawnPercentSpecialUnit = 10;
 };
+class Hangar : Building {
+    positions[] = {0,1,2,3,4,5,6,7,8,9};
+    specialUnits[] = {"O_crew_F", "O_engineer_F", "O_soldier_repair_F"};
+    specialUnitsPositions[] = {0,1,2,3,4,5,6};
+    spawnPercentSpecialUnit = 80;
+};
+class MilitaryOffices : Building {
+    positions[] = {0,1,2,3,4,5,6,7,8};
+    specialUnits[] = {"O_officer_F", "O_Soldier_TL_F", "o_survivor_F", "O_SoldierU_SL_F"};
+    specialUnitsPositions[] = {0,2,6,7};
+    spawnPercentSpecialUnit = 30;
+};
+class FortifiedNestSmall : Building {
+    positions[] = {0,2};
+    specialUnits[] = {"O_HeavyGunner_F", "O_Soldier_GL_F"};
+    specialUnitsPositions[] = {0,2};
+    spawnPercentSpecialUnit = 90;
+};

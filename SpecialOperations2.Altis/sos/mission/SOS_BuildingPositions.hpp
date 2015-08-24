@@ -9,24 +9,14 @@ class SOS_BuildingPositions {
             specialUnitsPositions[] = {12,13,14,15,16,17,18};
             spawnPercentSpecialUnit = 50;
         };
-        class Land_Hangar_F : Building {
-            positions[] = {0,1,2,3,4,5,6,7,8,9};
-            specialUnits[] = {"O_crew_F", "O_engineer_F", "O_soldier_repair_F"};
-            specialUnitsPositions[] = {0,1,2,3,4,5,6};
-            spawnPercentSpecialUnit = 80;
-        };
+        class Land_Hangar_F : Hangar {};
         class Land_Radar_F : Building {
             positions[] = {2,3,4,5,6,7,8,9};
             specialUnits[] = {"O_Sharpshooter_F", "O_soldier_M_F", "O_engineer_F"};
             specialUnitsPositions[] = {2,3,4,5,6,7,8,9};
             spawnPercentSpecialUnit = 40;
         };
-        class Land_MilOffices_V1_F : Building {
-            positions[] = {0,1,2,3,4,5,6,7,8};
-            specialUnits[] = {"O_officer_F", "O_Soldier_TL_F", "o_survivor_F", "O_SoldierU_SL_F"};
-            specialUnitsPositions[] = {0,2,6,7};
-            spawnPercentSpecialUnit = 30;
-        };
+        class Land_MilOffices_V1_F : MilitaryOffices {};
         
         class Land_Cargo_House_V1_F : CargoHouse {
             specialUnits[] = {"O_officer_F"};
@@ -67,6 +57,72 @@ class SOS_BuildingPositions {
         class Land_Cargo_Tower_V1_F : CargoTower {};
         class Land_Cargo_Tower_V2_F : CargoTower {};
         class Land_Cargo_Tower_V3_F : CargoTower {};
+        
+        
+        class Land_Mil_hangar_EP1 : Hangar {};
+        class Land_Ss_hangar : Hangar {};
+        class Land_Hangar_2 : Hangar {
+            positions[] = {0,1,2,3,4,5,6,7};
+        };
+        class Land_Mil_Barracks_i_EP1 : MilitaryOffices {};
+        class Land_Vez : Building {
+            positions[] = {0,2};
+            specialUnits[] = {"O_HeavyGunner_F", "O_Soldier_GL_F"};
+            specialUnitsPositions[] = {0,2};
+            spawnPercentSpecialUnit = 30;
+        };
+        class Land_Letistni_hala : Building {
+            positions[] = {0,1,3,4,7,8,9,10,11,14,15,16,17,18,19,21};
+            specialUnits[] = {"O_HeavyGunner_F", "O_Soldier_GL_F"};
+            specialUnitsPositions[] = {14,15,16,17,18,19};
+            spawnPercentSpecialUnit = 65;
+        };
+        class Land_fortified_nest_small_EP1 : FortifiedNestSmall {};
+        class Land_fortified_nest_small : FortifiedNestSmall {};
+        class Land_fortified_nest_big_EP1 : Building {
+            positions[] = {0,1,2,3,4,5,6,7,8,9,10,11,12};
+            specialUnits[] = {"O_HeavyGunner_F", "O_Soldier_AR_F"};
+            specialUnitsPositions[] = {3,5,6,7,8,10,12};
+            spawnPercentSpecialUnit = 90;
+        };
+        class Land_Ind_IlluminantTower : Building {
+            positions[] = {0};
+            specialUnits[] = {"O_Sharpshooter_F", "O_recon_M_F", "O_soldier_M_F"};
+            specialUnitsPositions[] = {0};
+            spawnPercentSpecialUnit = 100;
+        };
+        class Land_a_stationhouse : Building {
+            positions[] = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25};
+            specialUnits[] = {"O_Soldier_GL_F", "O_soldier_M_F", "O_Soldier_AA_F", "O_Soldier_AT_F", "O_HeavyGunner_F"};
+            specialUnitsPositions[] = {3,5,6,7,8,10,12,18,20,22,23,25};
+            spawnPercentSpecialUnit = 75;
+        };
+        class Land_Barrack2 : Building {
+            positions[] = {0,1,2,3,4,5};
+            specialUnits[] = {"O_officer_F", "O_Soldier_TL_F", "o_survivor_F", "O_SoldierU_SL_F"};
+            specialUnitsPositions[] = {0,2,4,5};
+            spawnPercentSpecialUnit = 30;
+        };
+        class Land_Mil_Guardhouse_EP1 : HouseAddon {};
+        class Land_Mil_House_EP1 : Building {
+            positions[] = {0,1};
+            spawnPercentSpecialUnit = -1;
+        };
+        class Land_Mil_Repair_center_EP1 : Building {
+            positions[] = {0,1,2,3};
+            specialUnits[] = {"O_crew_F", "O_engineer_F", "O_soldier_repair_F"};
+            specialUnitsPositions[] = {0,1,2,3};
+            spawnPercentSpecialUnit = 80;
+        };
+        class Land_Mil_House : Building {
+            positions[] = {0,1};
+            spawnPercentSpecialUnit = -1;
+        };
+        class Land_Ind_Workshop01_04 : HouseAddon {};
+        class Land_Hlidac_budka : Building {
+            positions[] = {0,1,2,3,4};
+            spawnPercentSpecialUnit = -1;
+        };
     };
     class Stadium {
         class Land_Stadium_p4_F : StadiumSeats {};
